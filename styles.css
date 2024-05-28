@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    text-align: center;
+    margin: 13% auto;
+    font-size: 20px;
+    background-color: skyblue;
+    border-radius: 7px;
+    width: 50%;
+}
+
+button{
+    font-size: larger;
+    margin: 5px;
+    border-radius: 5px;
+}

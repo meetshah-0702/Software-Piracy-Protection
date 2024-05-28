@@ -1,0 +1,32 @@
+form{
+    width: 90vw;
+    margin: auto;
+}
+
+.container{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: skyblue;
+    border-radius: 7px;
+}
+
+.container > div {
+    margin: 20px auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    cursor: pointer;
+}

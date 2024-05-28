@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 475px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+           /* flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+            flex-wrap: wrap-reverse;
+            flex-wrap: wrap;
+
+            flex-flow: row wrap;
+
+           /* justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+
+          /*  align-items: center;
+            align-items: flex-end;
+            align-items: flex-start; 
+            align-items: stretch; */
+
+        }
+        .box{
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 5px;
+            width: 200px;
+            height: 200px;
+        }
+        #box-1{
+           /* order: 7;*/
+          /* flex-grow: 2;*/
+          flex-grow: 2;
+          flex-shrink: 2;
+          flex-basis: 25px;
+        }
+        #box-2{
+           /* order: 10;*/
+          /* flex-grow: 3;*/
+            flex: 3 3 125px;
+        }
+        #box-3{
+           /* order: 5;*/
+           flex: 1 1 50px;
+          /* align-self: flex-end;
+           align-self: flex-start;
+           align-self: center; */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>This is a Flexbox</h1>
+    <div class="container">
+        <div class="box" id="box-1">This is first</div>
+        <div class="box" id="box-2">This is second</div>
+        <div class="box" id="box-3">This is third</div>
+    </div>
+</body>
+</html>

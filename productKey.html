@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="productkey.css">
+
+    <!-- JS Files -->
+    <script src="./index.js" async></script>
+</head>
+<body>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            DMKD
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./download.html">Download</a>
+          <a href="./register.html" class="active">Register</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1>Thanks for Registration!</h1>
+        <div class="key-container">
+            <p id="product-key">Unlock the Product Key</p>
+            <button onclick="generateProductKey(this.id)" id="unlock-btn">Unlock</button>
+            <a href="#" onclick="redirectToVerification()">Go for Verification</a>
+        </div>
+      </div>
+
+    <!-- <form action="./productKey.html">
+        <div class="container">
+            <div class="input-cnt">
+                <label for="">Email</label> 
+                <input type="email" required>
+            </div>
+            <div class="input-cnt">
+                <label for="">Password</label>
+                <input type="password" required>
+            </div>
+            <div class="input-cnt">
+                <label for="">Confirm Password</label>
+                <input type="password" required>
+            </div>
+            <div class="input-cnt">
+                <input type="submit" value="Register" >
+            </div>
+        </div>
+    </form> -->
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          background-color: #f8f8f8;
+          height: 100vh;
+          width: 100vw;
+          overflow: hidden;
+      }
+      .container {
+          width: 50vw;
+          margin: 15px auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          display: flex;
+          flex-direction: column;
+      }
+      h1 {
+          font-size: 24px;
+          margin-bottom: 20px;
+      }
+      label {
+          display: block;
+          margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+          width: 50%;
+          padding: 10px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          
+      }
+      textarea {
+          height: 100px;
+          display: block;
+      }
+      input[type="submit"] {
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      input[type="submit"]:hover {
+          background-color: #0056b3;
+      }
+  </style>
+</head>
+<body>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            DMKD
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./download.html">Download</a>
+          <a href="./register.html">Register</a>
+          <a href="./contact.html" class="active">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    
+    
+</body>
+</html>

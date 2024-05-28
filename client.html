@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Page</title>
+    
+</head>
+<body>
+    <h1>Welcome to the Client's Website</h1>
+    <p id="special">Click <a href="register.html">here</a> if you want to use the special feature.</p>
+    <button id="resetBtn">Log Out</button>
+    <script>
+       let special = document.getElementById("special");
+       if (!localStorage.getItem('visitedClient')) {
+            //localStorage.setItem('visitedClient', 'true');
+            //window.location.href = './register.html';
+        }else{
+            //special.innerHTML = "Special feature is here !!";
+            if (localStorage.getItem('verificationCompleted') === 'true') {
+                special.innerHTML = "Special feature is here !!";
+            }
+        }
+
+        let resetBtn = document.getElementById("resetBtn");
+        resetBtn.addEventListener('click', function() {
+            //localStorage.removeItem('visitedClient');
+           localStorage.setItem('visitedClient', 'false');
+            localStorage.removeItem('verificationCompleted');
+            alert("You have been logged out. You can now register again.");
+            special.innerHTML="Click <a href='register.html'>here</a> if you want to use the special feature.";
+        });
+    </script>
+</body>
+</html>

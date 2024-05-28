@@ -1,0 +1,30 @@
+.container > h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 27px;
+}
+
+.key-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #068e06;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 200ms linear;
+}
+
+button:hover{
+    background-color: #005c00;
+}
